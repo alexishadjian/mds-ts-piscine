@@ -1,0 +1,15 @@
+import { GestionCours, NiveauCours } from './gestionCours.js';
+
+const etudiant1 = { id: 1, nom: 'Alice', niveau: 'Licence' };
+const etudiant2 = { id: 2, nom: 'Bob', niveau: 'Master' };
+
+
+const cours1 = { code: 'C001', titre: 'Programmation', niveau: NiveauCours.Intermediaire };
+const cours2 = { code: 'C002', titre: 'Base de données', niveau: NiveauCours.Avance };
+
+const gestionCours = new GestionCours();
+gestionCours.ajouterCours(cours1);
+gestionCours.ajouterCours(cours2);
+gestionCours.inscrireEtudiant(cours1.code, etudiant1);
+gestionCours.inscrireEtudiant(cours2.code, etudiant2);
+gestionCours.afficherInscriptions();

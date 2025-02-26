@@ -10,7 +10,7 @@ yarn-error.log
 next-env.d.ts
 
 # Build output
-dist/
+# dist/
 build/
 .out-tsc
 
