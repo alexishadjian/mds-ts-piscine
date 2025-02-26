@@ -20,7 +20,7 @@ class Chien extends AnimalEP2 {
         super('chien');
     }
 
-    seDeplacer(): void {
+    seDeplacer() {
         console.log(`Le chien ${this.nom} court.`);
     }
 }
@@ -30,7 +30,7 @@ class Chat extends AnimalEP2 {
         super('chat');
     }
 
-    seDeplacer(): void {
+    seDeplacer() {
         console.log(`Le chat ${this.nom} saute.`);
     }
 }
